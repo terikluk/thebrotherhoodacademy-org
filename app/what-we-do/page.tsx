@@ -80,10 +80,10 @@ export default function WhatWeDoPage() {
       {/* 3 Pillars */}
       <section className="relative py-20 px-6 overflow-hidden">
         <Image
-          src="/images/hill_country.png"
+          src="/images/pillars.png"
           alt=""
           fill
-          className="object-cover object-[center_40%]"
+          className="object-cover object-center"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-navy/82" />
