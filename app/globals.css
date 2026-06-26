@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
+/* ── Brand color tokens ───────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy:       #0F1F3D;
+  --gold:       #C8973A;
+  --gold-light: #E0B86A;
+  --offwhite:   #F7F4EF;
+  --warm-white: #FDFBF7;
+  --slate:      #4A5568;
+  --navy-light: #1E3A6E;
 }
 
+/* ── Tailwind v4 theme registration ──────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy:       var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-gold:       var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-offwhite:   var(--offwhite);
+  --color-warm-white: var(--warm-white);
+  --color-slate:      var(--slate);
+
+  --font-display: var(--font-playfair), "Georgia", serif;
+  --font-body:    var(--font-inter), "Helvetica Neue", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base styles ─────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--offwhite);
+  color: var(--navy);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  color: var(--navy);
 }
