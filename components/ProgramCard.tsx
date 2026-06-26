@@ -2,20 +2,17 @@ import Link from "next/link";
 
 interface ProgramCardProps {
   href: string;
-  icon: React.ReactNode;
   title: string;
   description: string;
 }
 
-export default function ProgramCard({ href, icon, title, description }: ProgramCardProps) {
+export default function ProgramCard({ href, title, description }: ProgramCardProps) {
   return (
     <Link
       href={href}
       className="group block bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300"
     >
-      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-navy/8 text-navy group-hover:bg-gold group-hover:text-warm-white transition-colors mb-5">
-        {icon}
-      </div>
+      <div className="w-10 h-0.5 bg-gold mb-6 group-hover:w-14 transition-all duration-300" />
       <h3 className="font-display text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors">
         {title}
       </h3>
