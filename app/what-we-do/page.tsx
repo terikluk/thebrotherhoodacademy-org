@@ -107,9 +107,9 @@ export default function WhatWeDoPage() {
                 body: "For ages 18–24, we provide life skills, job readiness, and continued community support — because the transition to independence takes time and relationship.",
               },
             ].map(({ title, body }) => (
-              <div key={title} className="bg-navy-light/40 rounded-2xl p-8 border border-gold/20">
+              <div key={title} className="p-8 border-t border-gold/40">
                 <h3 className="font-display text-xl font-semibold text-gold mb-3">{title}</h3>
-                <p className="font-body text-sm text-warm-white/75 leading-relaxed">{body}</p>
+                <p className="font-body text-sm text-warm-white/80 leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
