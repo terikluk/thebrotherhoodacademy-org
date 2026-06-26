@@ -231,7 +231,7 @@ export default function HomePage() {
         primaryLabel="Ways to Give"
         secondaryHref="/refer-a-child"
         secondaryLabel="Refer a Child"
-        variant="gold"
+        variant="offwhite"
       />
     </>
   );

@@ -7,7 +7,7 @@ interface CTASectionProps {
   primaryLabel: string;
   secondaryHref?: string;
   secondaryLabel?: string;
-  variant?: "navy" | "gold";
+  variant?: "navy" | "gold" | "offwhite";
 }
 
 export default function CTASection({
@@ -19,38 +19,49 @@ export default function CTASection({
   secondaryLabel,
   variant = "navy",
 }: CTASectionProps) {
-  const isNavy = variant === "navy";
+  const bg =
+    variant === "navy" ? "bg-navy" :
+    variant === "gold" ? "bg-gold" :
+    "bg-offwhite";
+
+  const headingColor =
+    variant === "navy" ? "text-warm-white" : "text-navy";
+
+  const subtextColor =
+    variant === "navy" ? "text-warm-white/75" : "text-slate";
+
+  const primaryClass =
+    variant === "navy"
+      ? "bg-gold text-navy hover:bg-gold-light"
+      : "bg-navy text-warm-white hover:bg-navy-light";
+
+  const secondaryClass =
+    variant === "navy"
+      ? "border-gold text-gold hover:bg-gold hover:text-navy"
+      : "border-navy text-navy hover:bg-navy hover:text-warm-white";
 
   return (
-    <section className={`py-20 px-6 ${isNavy ? "bg-navy" : "bg-gold"}`}>
+    <section className={`py-20 px-6 ${bg}`}>
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className={`font-display text-3xl md:text-4xl font-bold mb-4 ${isNavy ? "text-warm-white" : "text-navy"}`}>
+        <h2 className={`font-display text-3xl md:text-4xl font-bold mb-4 ${headingColor}`}>
           {heading}
         </h2>
         {subtext && (
-          <p className={`font-body text-lg mb-8 max-w-2xl mx-auto ${isNavy ? "text-warm-white/75" : "text-navy/80"}`}>
+          <p className={`font-body text-lg mb-8 max-w-2xl mx-auto ${subtextColor}`}>
             {subtext}
           </p>
         )}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href={primaryHref}
-            className={`inline-block font-body font-semibold px-8 py-3.5 rounded-full transition-colors ${
-              isNavy
-                ? "bg-gold text-navy hover:bg-gold-light"
-                : "bg-navy text-warm-white hover:bg-navy-light"
-            }`}
+            className={`inline-block font-body font-semibold px-8 py-3.5 rounded-full transition-colors ${primaryClass}`}
           >
             {primaryLabel}
           </Link>
           {secondaryHref && secondaryLabel && (
             <Link
               href={secondaryHref}
-              className={`inline-block font-body font-semibold px-8 py-3.5 rounded-full border-2 transition-colors ${
-                isNavy
-                  ? "border-gold text-gold hover:bg-gold hover:text-navy"
-                  : "border-navy text-navy hover:bg-navy hover:text-warm-white"
-              }`}
+              className={`inline-block font-body font-semibold px-8 py-3.5 rounded-full border-2 transition-colors ${secondaryClass}`}
             >
               {secondaryLabel}
             </Link>
