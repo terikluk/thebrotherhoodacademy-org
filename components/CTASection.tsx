@@ -17,7 +17,7 @@ export default function CTASection({
   primaryLabel,
   secondaryHref,
   secondaryLabel,
-  variant = "navy",
+  variant = "offwhite",
 }: CTASectionProps) {
   const bg =
     variant === "navy" ? "bg-navy" :
