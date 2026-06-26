@@ -98,7 +98,7 @@ export default function HomePage() {
             <span className="text-gold">Faith, Community & Care</span>
           </h1>
           <p className="font-body text-xl md:text-2xl text-warm-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
-            A Christ-centered General Residential Operation in Salado, TX — providing structured, trauma-informed care for young men ages 10–17.
+            A Christ-centered General Residential Operation in Salado, TX — providing structured, trauma-informed care for young men <span className="whitespace-nowrap">ages 10–17.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
