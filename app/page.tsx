@@ -205,7 +205,7 @@ export default function HomePage() {
       {/* Quote — photo background with dark overlay */}
       <section className="relative py-28 px-6 overflow-hidden">
         <Image
-          src="/images/facility/facility-04.jpg"
+          src="/images/hill_country.png"
           alt=""
           fill
           className="object-cover object-center"
