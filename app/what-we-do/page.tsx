@@ -70,7 +70,7 @@ export default function WhatWeDoPage() {
   return (
     <>
       <PageHero
-        imageSrc="/images/facility/facility-04.jpg"
+        imageSrc="/images/what_we_do.png"
         eyebrow="What We Do"
         heading="Building Futures, Strengthening Faith"
         subheading="From residential care to specialized therapy, every program we offer is designed to meet young men where they are and guide them toward lasting independence."
