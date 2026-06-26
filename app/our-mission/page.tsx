@@ -50,6 +50,7 @@ export default function OurMissionPage() {
         heading="Nurturing Young Men in Christ"
         subheading="For lives of purpose, accountability, and hope — grounded in faith, structure, and genuine relationship."
         height="lg"
+        objectPosition="center 30%"
       />
 
       {/* Mission Body */}

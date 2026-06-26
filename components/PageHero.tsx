@@ -7,6 +7,7 @@ interface PageHeroProps {
   heading: string;
   subheading?: string;
   height?: "sm" | "md" | "lg" | "xl";
+  objectPosition?: string;
 }
 
 const heightMap = {
@@ -23,6 +24,7 @@ export default function PageHero({
   heading,
   subheading,
   height = "md",
+  objectPosition = "center",
 }: PageHeroProps) {
   return (
     <section className={`relative flex items-center justify-center ${heightMap[height]} overflow-hidden`}>
@@ -31,6 +33,7 @@ export default function PageHero({
         alt={imageAlt}
         fill
         className="object-cover"
+        style={{ objectPosition }}
         priority
         sizes="100vw"
       />
