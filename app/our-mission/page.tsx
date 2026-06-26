@@ -75,7 +75,7 @@ export default function OurMissionPage() {
   return (
     <>
       <PageHero
-        imageSrc="/images/facility/facility-03.jpg"
+        imageSrc="/images/road.png"
         eyebrow="Our Mission"
         heading="Nurturing Young Men in Christ"
         subheading="For lives of purpose, accountability, and hope — grounded in faith, structure, and genuine relationship."
