@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import ValueCard from "@/components/ValueCard";
 import CTASection from "@/components/CTASection";
@@ -76,6 +77,17 @@ export default function OurMissionPage() {
           </div>
         </div>
       </section>
+
+      {/* Prayer image break */}
+      <div className="relative h-72 md:h-96 overflow-hidden">
+        <Image
+          src="/images/prayer.png"
+          alt="Community prayer at The Brotherhood Academy"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+      </div>
 
       {/* Core Values */}
       <section className="py-20 px-6 bg-warm-white">
