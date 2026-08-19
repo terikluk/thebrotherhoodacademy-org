@@ -12,7 +12,7 @@ export default function ProgramCard({ href, title, description, className = "", 
   return (
     <Link
       href={href}
-      className={`group ${fillHeight ? "flex flex-col" : "block"} bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300 ${className}`}
+      className={`group ${fillHeight ? "flex flex-col min-h-[384px] lg:min-h-[340px]" : "block"} bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300 ${className}`}
     >
       <div className="w-10 h-0.5 bg-gold mb-6 group-hover:w-14 transition-all duration-300" />
       <h3 className="font-display text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors">
