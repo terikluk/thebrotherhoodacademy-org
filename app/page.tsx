@@ -117,7 +117,7 @@ export default function HomePage() {
             Nurturing Young Men in Christ for Lives of Purpose, Accountability, and Hope
           </h2>
           <p className="font-body text-lg text-slate leading-relaxed mb-8">
-            We are a faith-based General Residential Operation (GRO) dedicated to empowering young men ages 10–17 who lack stable homes or parental support. Through evidence-based care, Christian principles, and genuine community, we guide young men toward healing and lasting independence.
+            We are a faith-based General Residential Operation (GRO) dedicated to empowering young men ages 10–17 who lack stable homes or parental support. Through evidence-based care, Christian principles, and genuine community, we guide young men toward healing, growth, and greater independence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/our-mission" className="inline-block font-body font-semibold text-navy border-2 border-navy px-7 py-3 rounded-full hover:bg-navy hover:text-warm-white transition-colors">
