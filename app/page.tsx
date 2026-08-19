@@ -193,12 +193,13 @@ export default function HomePage() {
 
       <CTASection
         heading="Support a Young Man Today"
-        subtext="Your generosity funds housing, meals, education, mentorship, and the Christ-centered care that changes generations."
+        subtext="Your generosity helps provide housing, meals, education, mentorship, and Christ-centered care for young men who need stability, structure, and support."
         primaryHref="/ways-to-give"
         primaryLabel="Ways to Give"
         secondaryHref="/refer-a-child"
         secondaryLabel="Refer a Child"
         variant="offwhite"
+        compact
       />
 
       {/* Quote — photo background with dark overlay */}

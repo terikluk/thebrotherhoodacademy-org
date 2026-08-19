@@ -8,6 +8,7 @@ interface CTASectionProps {
   secondaryHref?: string;
   secondaryLabel?: string;
   variant?: "navy" | "gold" | "offwhite";
+  compact?: boolean;
 }
 
 export default function CTASection({
@@ -18,6 +19,7 @@ export default function CTASection({
   secondaryHref,
   secondaryLabel,
   variant = "offwhite",
+  compact = false,
 }: CTASectionProps) {
   const bg =
     variant === "navy" ? "bg-navy" :
@@ -41,7 +43,7 @@ export default function CTASection({
       : "border-navy text-navy hover:bg-navy hover:text-warm-white";
 
   return (
-    <section className={`py-20 px-6 ${bg}`}>
+    <section className={`${compact ? "py-[70px]" : "py-20"} px-6 ${bg}`}>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className={`font-display text-3xl md:text-4xl font-bold mb-4 ${headingColor}`}>
           {heading}
