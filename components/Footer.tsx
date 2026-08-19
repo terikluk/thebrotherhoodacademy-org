@@ -14,9 +14,9 @@ const quickLinks = [
 const programLinks = [
   { href: "/residential-living", label: "Residential Living" },
   { href: "/tbri-sama", label: "TBRI® & SAMA®" },
-  { href: "/thrive-asd", label: "Thrive (ASD Group)" },
-  { href: "/idd-support", label: "IDD Support" },
-  { href: "/emotional-behavioral", label: "Emotional & Behavioral" },
+  { href: "/thrive-asd", label: "Thrive on the Spectrum" },
+  { href: "/idd-support", label: "IDD Group Therapy" },
+  { href: "/emotional-behavioral", label: "Emotional & Behavioral Support Group" },
 ];
 
 export default function Footer() {
@@ -47,7 +47,7 @@ export default function Footer() {
                 href="https://instagram.com/thebrotherhoodacademy_"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-warm-white/60 hover:text-gold transition-colors"
+                className="text-warm-white/60 hover:text-gold focus-visible:text-gold outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy rounded-sm transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export default function Footer() {
                 href="https://www.facebook.com/profile.php?id=100094207116848"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-warm-white/60 hover:text-gold transition-colors"
+                className="text-warm-white/60 hover:text-gold focus-visible:text-gold outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy rounded-sm transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
