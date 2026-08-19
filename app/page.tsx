@@ -191,6 +191,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <CTASection
+        heading="Support a Young Man Today"
+        subtext="Your generosity funds housing, meals, education, mentorship, and the Christ-centered care that changes generations."
+        primaryHref="/ways-to-give"
+        primaryLabel="Ways to Give"
+        secondaryHref="/refer-a-child"
+        secondaryLabel="Refer a Child"
+        variant="offwhite"
+      />
+
       {/* Quote — photo background with dark overlay */}
       <section className="relative py-28 px-6 overflow-hidden">
         <Image
@@ -212,16 +222,6 @@ export default function HomePage() {
           <p className="font-body text-gold text-sm tracking-wide">The Brotherhood Academy</p>
         </div>
       </section>
-
-      <CTASection
-        heading="Support a Young Man Today"
-        subtext="Your generosity funds housing, meals, education, mentorship, and the Christ-centered care that changes generations."
-        primaryHref="/ways-to-give"
-        primaryLabel="Ways to Give"
-        secondaryHref="/refer-a-child"
-        secondaryLabel="Refer a Child"
-        variant="offwhite"
-      />
     </>
   );
 }
