@@ -45,8 +45,8 @@ const programs = [
 
 const stats = [
   { value: "100%", label: "Grade-Level Progress", description: "of our youth passed their grade levels" },
-  { value: "74%", label: "Medication Management Outcomes", description: "have shown improved or stabilized medication-management outcomes, with many no longer requiring psychotropic medications" },
-  { value: "70%", label: "Commitment to Christ", description: "of young men made a profession of faith" },
+  { value: "74%", label: "Medication Management Outcomes", description: "showed improved or stabilized outcomes, with many no longer requiring psychotropic medications" },
+  { value: "70%", label: "Professions of Faith", description: "of young men made a profession of faith" },
   { value: "50%+", label: "Stable Placements", description: "of placements remain stable and thriving" },
 ];
 
