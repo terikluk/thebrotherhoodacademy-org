@@ -158,8 +158,8 @@ export default function HomePage() {
       </section>
 
       {/* Feature Section */}
-      <section className="relative bg-offwhite overflow-hidden">
-        {/* Desktop / large tablet: image emerges from the right, fading into the cream background */}
+      <section className="relative bg-navy overflow-hidden">
+        {/* Desktop / large tablet: image emerges from the right, fading into the navy background */}
         <div className="hidden lg:block absolute inset-y-0 right-0 w-[62%] xl:w-[58%]">
           <Image
             src="/images/hero.jpg"
@@ -173,16 +173,16 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32 lg:min-h-[620px] lg:flex lg:items-center">
           <div className="max-w-lg">
             <p className="font-body text-gold text-sm tracking-widest uppercase mb-3">Our Home</p>
-            <h2 className="font-display text-4xl font-bold text-navy mb-5">
+            <h2 className="font-display text-4xl font-bold text-warm-white mb-5">
               A Place of Comfort, Stability, and Belonging
             </h2>
-            <p className="font-body text-slate leading-relaxed mb-5">
+            <p className="font-body text-warm-white/75 leading-relaxed mb-5">
               Step inside the heart of The Brotherhood Academy, where our young men find comfort, stability, and a true sense of belonging. Each space is more than a building — it's a nurturing sanctuary where lives are positively shaped and bright futures are crafted.
             </p>
-            <p className="font-body text-slate leading-relaxed mb-8">
+            <p className="font-body text-warm-white/75 leading-relaxed mb-8">
               Located in Salado, TX on a secure, gated property, our cottage-style home is designed to feel like a family residence rather than a traditional group facility.
             </p>
-            <Link href="/our-home" className="inline-block font-body font-semibold text-lg bg-navy text-warm-white px-7 py-3 rounded-full hover:bg-navy-light transition-colors">
+            <Link href="/our-home" className="inline-block font-body font-semibold text-lg bg-gold text-navy px-7 py-3 rounded-full hover:bg-gold-light transition-colors">
               See Our Home
             </Link>
           </div>
