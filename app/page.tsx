@@ -158,45 +158,36 @@ export default function HomePage() {
       </section>
 
       {/* Feature Section */}
-      <section className="relative bg-navy overflow-hidden">
-        {/* Desktop / large tablet: image emerges from the right, fading into the navy background */}
-        <div className="hidden lg:block absolute inset-y-0 right-0 w-[62%] xl:w-[58%]">
-          <Image
-            src="/images/hero.jpg"
-            alt="The Brotherhood Academy home in Salado, TX"
-            fill
-            className="object-cover object-[62%_40%] [mask-image:linear-gradient(to_right,transparent_0%,rgba(0,0,0,0.06)_18%,rgba(0,0,0,0.22)_38%,rgba(0,0,0,0.5)_58%,rgba(0,0,0,0.82)_78%,black_96%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,rgba(0,0,0,0.06)_18%,rgba(0,0,0,0.22)_38%,rgba(0,0,0,0.5)_58%,rgba(0,0,0,0.82)_78%,black_96%)]"
-            sizes="60vw"
-          />
-        </div>
+      <section className="relative overflow-hidden">
+        {/* Full-bleed photo of the Brotherhood Academy home */}
+        <Image
+          src="/images/hero.jpg"
+          alt="The Brotherhood Academy home in Salado, TX"
+          fill
+          className="object-cover object-[center_55%] lg:object-[64%_40%]"
+          sizes="100vw"
+          priority={false}
+        />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32 lg:min-h-[620px] lg:flex lg:items-center">
+        {/* Soft navy atmosphere — strongest where the text sits, fading gradually across most of the photo */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(15,31,61,0.93)_0%,rgba(15,31,61,0.84)_18%,rgba(15,31,61,0.6)_38%,rgba(15,31,61,0.32)_58%,rgba(15,31,61,0.1)_78%,transparent_92%)] lg:bg-[linear-gradient(to_right,rgba(15,31,61,0.93)_0%,rgba(15,31,61,0.84)_16%,rgba(15,31,61,0.6)_34%,rgba(15,31,61,0.32)_54%,rgba(15,31,61,0.1)_74%,transparent_92%)]" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32 min-h-[560px] lg:min-h-[640px] flex items-center">
           <div className="max-w-lg">
             <p className="font-body text-gold text-sm tracking-widest uppercase mb-3">Our Home</p>
             <h2 className="font-display text-4xl font-bold text-warm-white mb-5">
               A Place of Comfort, Stability, and Belonging
             </h2>
-            <p className="font-body text-warm-white/75 leading-relaxed mb-5">
+            <p className="font-body text-warm-white/80 leading-relaxed mb-5">
               Step inside the heart of The Brotherhood Academy, where our young men find comfort, stability, and a true sense of belonging. Each space is more than a building — it's a nurturing sanctuary where lives are positively shaped and bright futures are crafted.
             </p>
-            <p className="font-body text-warm-white/75 leading-relaxed mb-8">
+            <p className="font-body text-warm-white/80 leading-relaxed mb-8">
               Located in Salado, TX on a secure, gated property, our cottage-style home is designed to feel like a family residence rather than a traditional group facility.
             </p>
             <Link href="/our-home" className="inline-block font-body font-semibold text-lg bg-gold text-navy px-7 py-3 rounded-full hover:bg-gold-light transition-colors">
               See Our Home
             </Link>
           </div>
-        </div>
-
-        {/* Mobile / tablet: image settles below the text, softly fading in from the top */}
-        <div className="lg:hidden relative h-72 sm:h-96">
-          <Image
-            src="/images/hero.jpg"
-            alt="The Brotherhood Academy home in Salado, TX"
-            fill
-            className="object-cover object-[58%_38%] [mask-image:linear-gradient(to_bottom,transparent_0%,rgba(0,0,0,0.06)_14%,rgba(0,0,0,0.22)_30%,rgba(0,0,0,0.5)_48%,rgba(0,0,0,0.82)_66%,black_85%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,rgba(0,0,0,0.06)_14%,rgba(0,0,0,0.22)_30%,rgba(0,0,0,0.5)_48%,rgba(0,0,0,0.82)_66%,black_85%)]"
-            sizes="100vw"
-          />
         </div>
       </section>
 
