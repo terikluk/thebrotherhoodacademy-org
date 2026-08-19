@@ -165,7 +165,7 @@ export default function HomePage() {
             src="/images/hero.jpg"
             alt="The Brotherhood Academy home in Salado, TX"
             fill
-            className="object-cover object-[62%_40%] [mask-image:linear-gradient(102deg,transparent_0%,transparent_14%,black_52%)] [-webkit-mask-image:linear-gradient(102deg,transparent_0%,transparent_14%,black_52%)]"
+            className="object-cover object-[62%_40%] [mask-image:linear-gradient(102deg,transparent_0%,rgba(0,0,0,0.06)_18%,rgba(0,0,0,0.22)_38%,rgba(0,0,0,0.5)_58%,rgba(0,0,0,0.82)_78%,black_96%)] [-webkit-mask-image:linear-gradient(102deg,transparent_0%,rgba(0,0,0,0.06)_18%,rgba(0,0,0,0.22)_38%,rgba(0,0,0,0.5)_58%,rgba(0,0,0,0.82)_78%,black_96%)]"
             sizes="60vw"
           />
         </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
             src="/images/hero.jpg"
             alt="The Brotherhood Academy home in Salado, TX"
             fill
-            className="object-cover object-[58%_38%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_30%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_30%)]"
+            className="object-cover object-[58%_38%] [mask-image:linear-gradient(to_bottom,transparent_0%,rgba(0,0,0,0.06)_14%,rgba(0,0,0,0.22)_30%,rgba(0,0,0,0.5)_48%,rgba(0,0,0,0.82)_66%,black_85%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,rgba(0,0,0,0.06)_14%,rgba(0,0,0,0.22)_30%,rgba(0,0,0,0.5)_48%,rgba(0,0,0,0.82)_66%,black_85%)]"
             sizes="100vw"
           />
         </div>
