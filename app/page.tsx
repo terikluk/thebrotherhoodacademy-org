@@ -44,10 +44,10 @@ const programs = [
 ];
 
 const stats = [
-  { value: "100%", label: "Grade-Level Progress", description: "of our youth passed their grade levels" },
-  { value: "74%", label: "Medication Management Outcomes", description: "showed improved or stabilized outcomes, with many no longer requiring psychotropic medications" },
-  { value: "70%", label: "Professions of Faith", description: "of young men made a profession of faith" },
-  { value: "50%+", label: "Stable Placements", description: "of placements remain stable and thriving" },
+  { value: "100%", label: "Grade-Level Progress", description: "All of our youth passed their grade levels while receiving academic support within the structured environment of Brotherhood Academy." },
+  { value: "74%", label: "Medication Outcomes", description: "Showed improved or stabilized outcomes in medication management, with many no longer requiring psychotropic medications." },
+  { value: "70%", label: "Professions of Faith", description: "Young men made professions of faith within the Christ-centered environment and community of Brotherhood Academy." },
+  { value: "50%+", label: "Stable Placements", description: "More than half of placements remain stable and thriving, demonstrating continued stability among the young men served by Brotherhood Academy." },
 ];
 
 export default function HomePage() {
@@ -94,10 +94,16 @@ export default function HomePage() {
 
       {/* Impact Stats */}
       <section className="bg-navy py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-x-8">
             {stats.map((stat) => (
-              <StatsCounter key={stat.label} value={stat.value} label={stat.label} description={stat.description} />
+              <StatsCounter
+                key={stat.label}
+                value={stat.value}
+                label={stat.label}
+                description={stat.description}
+                descriptionMaxWidth="max-w-64"
+              />
             ))}
           </div>
         </div>

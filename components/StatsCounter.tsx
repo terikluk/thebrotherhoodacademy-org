@@ -6,6 +6,7 @@ interface StatsCounterProps {
   value: string;
   label: string;
   description?: string;
+  descriptionMaxWidth?: string;
 }
 
 function parseValue(val: string): { numeric: number; prefix: string; suffix: string } {
@@ -14,7 +15,7 @@ function parseValue(val: string): { numeric: number; prefix: string; suffix: str
   return { numeric: parseFloat(match[2]), prefix: match[1], suffix: match[3] };
 }
 
-export default function StatsCounter({ value, label, description }: StatsCounterProps) {
+export default function StatsCounter({ value, label, description, descriptionMaxWidth = "max-w-56" }: StatsCounterProps) {
   const { numeric, prefix, suffix } = parseValue(value);
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
@@ -59,7 +60,7 @@ export default function StatsCounter({ value, label, description }: StatsCounter
       </div>
       <div className="font-body font-semibold text-warm-white text-lg mb-1">{label}</div>
       {description && (
-        <p className="font-body text-sm text-warm-white/60 max-w-56 mx-auto leading-snug">{description}</p>
+        <p className={`font-body text-sm text-warm-white/60 ${descriptionMaxWidth} mx-auto leading-snug`}>{description}</p>
       )}
     </div>
   );
