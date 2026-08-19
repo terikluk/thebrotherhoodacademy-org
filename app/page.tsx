@@ -158,9 +158,20 @@ export default function HomePage() {
       </section>
 
       {/* Feature Section */}
-      <section className="py-20 px-6 bg-offwhite">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
+      <section className="relative bg-offwhite overflow-hidden">
+        {/* Desktop / large tablet: image emerges from the right, fading into the cream background */}
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-[62%] xl:w-[58%]">
+          <Image
+            src="/images/hero.jpg"
+            alt="The Brotherhood Academy home in Salado, TX"
+            fill
+            className="object-cover object-[62%_40%] [mask-image:linear-gradient(102deg,transparent_0%,transparent_14%,black_52%)] [-webkit-mask-image:linear-gradient(102deg,transparent_0%,transparent_14%,black_52%)]"
+            sizes="60vw"
+          />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32 lg:min-h-[620px] lg:flex lg:items-center">
+          <div className="max-w-lg">
             <p className="font-body text-gold text-sm tracking-widest uppercase mb-3">Our Home</p>
             <h2 className="font-display text-4xl font-bold text-navy mb-5">
               A Place of Comfort, Stability, and Belonging
@@ -175,15 +186,17 @@ export default function HomePage() {
               See Our Home
             </Link>
           </div>
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/hero.jpg"
-              alt="The Brotherhood Academy home in Salado, TX"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+        </div>
+
+        {/* Mobile / tablet: image settles below the text, softly fading in from the top */}
+        <div className="lg:hidden relative h-72 sm:h-96">
+          <Image
+            src="/images/hero.jpg"
+            alt="The Brotherhood Academy home in Salado, TX"
+            fill
+            className="object-cover object-[58%_38%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_30%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_30%)]"
+            sizes="100vw"
+          />
         </div>
       </section>
 
