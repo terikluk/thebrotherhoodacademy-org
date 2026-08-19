@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const primaryLinks = [
   { href: "/our-mission", label: "Our Mission" },
-  { href: "/what-we-do", label: "What We Do" },
+  { href: "/what-we-do", label: "Programs" },
   { href: "/our-team", label: "Our Team" },
   { href: "/impact-2025", label: "Impact" },
   { href: "/ways-to-give", label: "Give" },
@@ -37,7 +37,7 @@ export default function Nav() {
             alt="The Brotherhood Academy"
             width={40}
             height={40}
-            className="h-10 w-auto"
+            className="h-10 lg:h-11 w-auto"
             priority
           />
           <span className="font-display text-lg text-warm-white leading-tight hidden sm:block">
@@ -49,7 +49,7 @@ export default function Nav() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-6">
           {primaryLinks.map(({ href, label }) => {
-            if (label === "What We Do") {
+            if (label === "Programs") {
               return (
                 <div key={href} className="relative group">
                   <Link

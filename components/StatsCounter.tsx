@@ -59,7 +59,7 @@ export default function StatsCounter({ value, label, description }: StatsCounter
       </div>
       <div className="font-body font-semibold text-warm-white text-lg mb-1">{label}</div>
       {description && (
-        <p className="font-body text-sm text-warm-white/60 max-w-40 mx-auto leading-snug">{description}</p>
+        <p className="font-body text-sm text-warm-white/60 max-w-56 mx-auto leading-snug">{description}</p>
       )}
     </div>
   );

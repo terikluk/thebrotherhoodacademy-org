@@ -4,13 +4,14 @@ interface ProgramCardProps {
   href: string;
   title: string;
   description: string;
+  className?: string;
 }
 
-export default function ProgramCard({ href, title, description }: ProgramCardProps) {
+export default function ProgramCard({ href, title, description, className = "" }: ProgramCardProps) {
   return (
     <Link
       href={href}
-      className="group block bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300"
+      className={`group block bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300 ${className}`}
     >
       <div className="w-10 h-0.5 bg-gold mb-6 group-hover:w-14 transition-all duration-300" />
       <h3 className="font-display text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors">

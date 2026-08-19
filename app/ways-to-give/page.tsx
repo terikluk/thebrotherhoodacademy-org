@@ -68,6 +68,7 @@ const givingMethods = [
 
 const stats = [
   { value: "100%", label: "Grade Level Pass Rate", description: "Your gift supports academic success" },
+  { value: "74%", label: "Medication Stability", description: "Improved or stabilized medication outcomes" },
   { value: "70%", label: "Faith Commitments", description: "Spiritual transformation happens here" },
   { value: "50%+", label: "Stable Placements", description: "Long-term outcomes you can trust" },
   { value: "11%", label: "DFPS Permanency", description: "Reunification and adoption success" },
@@ -87,7 +88,7 @@ export default function WaysToGivePage() {
       {/* Impact Strip */}
       <section className="bg-navy py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
             {stats.map((s) => (
               <StatsCounter key={s.label} value={s.value} label={s.label} description={s.description} />
             ))}

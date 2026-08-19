@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const quickLinks = [
   { href: "/our-mission", label: "Our Mission" },
-  { href: "/what-we-do", label: "What We Do" },
+  { href: "/what-we-do", label: "Programs" },
   { href: "/our-team", label: "Our Team" },
-  { href: "/impact-2025", label: "Impact 2025" },
+  { href: "/impact-2025", label: "Impact" },
   { href: "/our-process", label: "Admissions" },
   { href: "/children-we-serve", label: "Children We Serve" },
   { href: "/careers", label: "Careers" },

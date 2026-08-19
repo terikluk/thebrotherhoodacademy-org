@@ -25,7 +25,7 @@ export default function ReferAChildPage() {
           <h2 className="font-display text-4xl font-bold text-navy mb-6">Who We Accept Referrals For</h2>
           <div className="space-y-5 font-body text-slate leading-relaxed text-lg">
             <p>
-              The Brotherhood Academy accepts referrals for young men ages 10–17 who lack stable housing or consistent parental/guardian support. Referrals come from families, caseworkers, DFPS, schools, churches, and community organizations.
+              The Brotherhood Academy accepts referrals for young men ages 10–17 who lack stable housing or consistent parental/guardian support. Referrals must come through caseworkers, agencies, and other authorized professionals — including DFPS, schools, churches, and community organizations.
             </p>
             <p>
               Our admissions process is clear and compassionate. We work quickly to evaluate each referral and communicate our decision with transparency and care.
@@ -42,7 +42,6 @@ export default function ReferAChildPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { who: "Families & Guardians", desc: "Parents or guardians who are seeking placement for a young man in their care are welcome to reach out directly." },
               { who: "DFPS Caseworkers", desc: "We work closely with the Texas Department of Family and Protective Services on behalf of youth in state care." },
               { who: "Schools & Counselors", desc: "Educators and school counselors who identify at-risk students may refer directly to our admissions team." },
               { who: "Churches & Ministries", desc: "Faith communities that connect us with young men in need are a vital part of our referral network." },

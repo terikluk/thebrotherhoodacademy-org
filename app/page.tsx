@@ -44,10 +44,10 @@ const programs = [
 ];
 
 const stats = [
-  { value: "100%", label: "Grade Level Pass Rate", description: "of our youth passed their grade levels" },
-  { value: "74%", label: "Medication Stability", description: "showed improved or stabilized outcomes" },
-  { value: "70%", label: "Committed to Christ", description: "of young men made faith commitments" },
-  { value: "50%+", label: "Stable Placements", description: "of placements remain stable & thriving" },
+  { value: "100%", label: "Grade-Level Progress", description: "of our youth passed their grade levels" },
+  { value: "74%", label: "Medication Management Outcomes", description: "have shown improved or stabilized medication-management outcomes, with many no longer requiring psychotropic medications" },
+  { value: "70%", label: "Commitment to Christ", description: "of young men made a profession of faith" },
+  { value: "50%+", label: "Stable Placements", description: "of placements remain stable and thriving" },
 ];
 
 export default function HomePage() {
@@ -63,17 +63,17 @@ export default function HomePage() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/75 via-navy/60 to-navy/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/50 to-navy/65" />
         <div className="relative z-10 text-center max-w-5xl mx-auto px-6 py-24">
-          <p className="font-body text-gold text-sm tracking-widest uppercase mb-4">
+          <p className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-6">
             Salado, Texas · Est. 2023
           </p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-warm-white mb-6 leading-tight">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-[4.15rem] font-bold text-warm-white mb-6 leading-tight">
             Transforming Lives Through<br />
             <span className="text-gold">Faith, Community & Care</span>
           </h1>
           <p className="font-body text-xl md:text-2xl text-warm-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
-            A Christ-centered General Residential Operation in Salado, TX — providing structured, trauma-informed care for young men <span className="whitespace-nowrap">ages 10–17.</span>
+            A Christ-centered residential community in Salado, Texas, providing structured, trauma-informed care for young men <span className="whitespace-nowrap">ages 10–17.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -89,11 +89,6 @@ export default function HomePage() {
               Our Mission
             </Link>
           </div>
-        </div>
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-warm-white/40">
-          <span className="font-body text-xs tracking-widest uppercase">Scroll</span>
-          <div className="w-0.5 h-8 bg-warm-white/30" />
         </div>
       </section>
 
@@ -123,7 +118,7 @@ export default function HomePage() {
               Read Our Mission
             </Link>
             <Link href="/what-we-do" className="inline-block font-body font-semibold text-gold border-2 border-gold px-7 py-3 rounded-full hover:bg-gold hover:text-navy transition-colors">
-              What We Do
+              Programs
             </Link>
           </div>
         </div>
@@ -139,9 +134,17 @@ export default function HomePage() {
               Every program we offer is rooted in trauma-informed care and Christ-centered values — designed to meet each young man where he is.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {programs.map((p) => (
-              <ProgramCard key={p.href} {...p} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+            {programs.map((p, i) => (
+              <ProgramCard
+                key={p.href}
+                {...p}
+                className={
+                  i === 3 ? "lg:col-span-2 lg:col-start-2" :
+                  i === 4 ? "lg:col-span-2 lg:col-start-4" :
+                  "lg:col-span-2"
+                }
+              />
             ))}
           </div>
         </div>
@@ -167,8 +170,8 @@ export default function HomePage() {
           </div>
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/facility/facility-01.jpg"
-              alt="Brotherhood Academy facility in Salado, TX"
+              src="/images/hero.jpg"
+              alt="The Brotherhood Academy home in Salado, TX"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
