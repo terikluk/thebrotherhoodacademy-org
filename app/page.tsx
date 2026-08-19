@@ -179,10 +179,10 @@ export default function HomePage() {
               A Place of Comfort, Stability, and Belonging
             </h2>
             <p className="font-body text-warm-white/80 leading-relaxed mb-5">
-              Step inside the heart of The Brotherhood Academy, where our young men find comfort, stability, and a true sense of belonging. Each space is more than a building — it's a nurturing sanctuary where lives are positively shaped and bright futures are crafted.
+              At The Brotherhood Academy, home is meant to be more than a place to stay. Our cottage-style residence gives young men a stable, structured environment where they can build trust, develop life skills, and experience the consistency and sense of belonging that help support lasting growth.
             </p>
             <p className="font-body text-warm-white/80 leading-relaxed mb-8">
-              Located in Salado, TX on a secure, gated property, our cottage-style home is designed to feel like a family residence rather than a traditional group facility.
+              Located in Salado, Texas, on a secure, gated property, the home is designed to feel like a family residence rather than a traditional group facility, giving young men a comfortable setting for daily routines, relationships, and growth.
             </p>
             <Link href="/our-home" className="inline-block font-body font-semibold text-lg bg-gold text-navy px-7 py-3 rounded-full hover:bg-gold-light transition-colors">
               See Our Home
