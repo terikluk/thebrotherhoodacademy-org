@@ -15,31 +15,31 @@ const programs = [
     href: "/residential-living",
     title: "Residential Living",
     description:
-      "A safe, structured, trauma-informed home for young men to heal, grow, and thrive in Salado, TX.",
+      "A stable, structured home environment for young men who need consistency, guidance, and support. Grounded in trauma-informed, relationship-based care, the program promotes healing, responsibility, life skills, and a lasting sense of belonging.",
   },
   {
     href: "/tbri-sama",
     title: "TBRI® & SAMA®",
     description:
-      "Evidence-based, trauma-informed intervention and crisis prevention programs integrated into daily care.",
+      "Evidence-based approaches that help our team build trust, promote healing, and maintain safety. TBRI® supports connection, empowerment, and healthy relationships, while SAMA® equips staff with proactive strategies for crisis prevention and de-escalation.",
   },
   {
     href: "/thrive-asd",
-    title: "Thrive (ASD Group)",
+    title: "Thrive on the Spectrum",
     description:
-      "Social and communication skill-building in a structured, supportive group setting for individuals with Autism Spectrum Disorder.",
+      "A warm, structured group for individuals on the autism spectrum to strengthen social and communication skills. Through evidence-based activities, role-playing, social stories, and peer interaction, participants practice real-life skills in a safe and encouraging environment.",
   },
   {
     href: "/idd-support",
-    title: "IDD Support",
+    title: "IDD Group Therapy",
     description:
-      "Specialized group therapy addressing adaptive life skills, communication, and emotional regulation for individuals with intellectual disabilities.",
+      "A supportive group focused on social, communication, and adaptive life skills for individuals with intellectual and developmental disabilities. Structured routines, visual supports, hands-on activities, and peer modeling help participants build skills at an individualized pace.",
   },
   {
     href: "/emotional-behavioral",
-    title: "Emotional & Behavioral",
+    title: "Emotional & Behavioral Support Group",
     description:
-      "Group-based intervention building coping skills, emotional regulation, and healthy relationships for youth with emotional challenges.",
+      "A safe, nurturing group for individuals who need additional support managing emotions and behavior. Through guided discussion, role-play, and structured activities, participants develop coping strategies, emotional regulation, communication, and healthy problem-solving skills.",
   },
 ];
 
@@ -145,6 +145,7 @@ export default function HomePage() {
               <ProgramCard
                 key={p.href}
                 {...p}
+                fillHeight
                 className={
                   i === 3 ? "lg:col-span-2 lg:col-start-2" :
                   i === 4 ? "lg:col-span-2 lg:col-start-4" :

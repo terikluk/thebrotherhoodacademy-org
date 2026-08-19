@@ -5,20 +5,21 @@ interface ProgramCardProps {
   title: string;
   description: string;
   className?: string;
+  fillHeight?: boolean;
 }
 
-export default function ProgramCard({ href, title, description, className = "" }: ProgramCardProps) {
+export default function ProgramCard({ href, title, description, className = "", fillHeight = false }: ProgramCardProps) {
   return (
     <Link
       href={href}
-      className={`group block bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300 ${className}`}
+      className={`group ${fillHeight ? "flex flex-col" : "block"} bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300 ${className}`}
     >
       <div className="w-10 h-0.5 bg-gold mb-6 group-hover:w-14 transition-all duration-300" />
       <h3 className="font-display text-xl font-semibold text-navy mb-3 group-hover:text-gold transition-colors">
         {title}
       </h3>
       <p className="font-body text-sm text-slate leading-relaxed">{description}</p>
-      <div className="mt-5 flex items-center gap-1 text-gold font-body text-sm font-semibold">
+      <div className={`${fillHeight ? "mt-auto pt-5" : "mt-5"} flex items-center gap-1 text-gold font-body text-sm font-semibold`}>
         Learn more
         <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
