@@ -64,7 +64,7 @@ export default function HomePage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/50 to-navy/65" />
-        <div className="relative z-10 text-center max-w-5xl mx-auto px-6 py-24">
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-6 py-24 md:translate-y-[5vh]">
           <p className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-6">
             Salado, Texas · Est. 2023
           </p>
