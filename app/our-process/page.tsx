@@ -78,7 +78,7 @@ export default function OurProcessPage() {
           <p className="font-body text-gold text-sm tracking-widest uppercase mb-4">How It Works</p>
           <h2 className="font-display text-4xl font-bold text-navy mb-6">Our 10-Step Admissions Process</h2>
           <p className="font-body text-lg text-slate leading-relaxed mb-12">
-            From initial contact to move-in day, we are with you every step of the way. Our process is designed to ensure the best possible match between each young man's needs and our ability to provide the care he deserves.
+            From initial contact to move-in day, we are with you every step of the way. The Brotherhood Academy operates as a licensed General Residential Operation (GRO), and our process is designed to ensure the best possible match between each young man's needs and our ability to provide the care he deserves.
           </p>
           <ol className="relative">
             {steps.map((step, i) => (
