@@ -170,7 +170,7 @@ export default function HomePage() {
         />
 
         {/* Soft navy atmosphere — strongest where the text sits, fading gradually across most of the photo */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(15,31,61,0.93)_0%,rgba(15,31,61,0.84)_18%,rgba(15,31,61,0.6)_38%,rgba(15,31,61,0.32)_58%,rgba(15,31,61,0.1)_78%,transparent_92%)] lg:bg-[linear-gradient(to_right,rgba(15,31,61,0.93)_0%,rgba(15,31,61,0.84)_16%,rgba(15,31,61,0.6)_34%,rgba(15,31,61,0.32)_54%,rgba(15,31,61,0.1)_74%,transparent_92%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(15,31,61,0.86)_0%,rgba(15,31,61,0.78)_14%,rgba(15,31,61,0.64)_28%,rgba(15,31,61,0.48)_44%,rgba(15,31,61,0.32)_58%,rgba(15,31,61,0.18)_72%,rgba(15,31,61,0.07)_84%,transparent_95%)] lg:bg-[linear-gradient(to_right,rgba(15,31,61,0.86)_0%,rgba(15,31,61,0.78)_13%,rgba(15,31,61,0.64)_26%,rgba(15,31,61,0.48)_41%,rgba(15,31,61,0.32)_55%,rgba(15,31,61,0.18)_69%,rgba(15,31,61,0.07)_82%,transparent_95%)]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32 min-h-[560px] lg:min-h-[640px] flex items-center">
           <div className="max-w-lg">
