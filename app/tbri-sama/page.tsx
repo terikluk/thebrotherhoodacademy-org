@@ -15,7 +15,7 @@ export default function TbriSamaPage() {
         imageAlt="A young man walking down a quiet country road"
         eyebrow="Our Approach"
         heading="Trauma-Informed Care Rooted in Safety and Connection"
-        subheading="TBRI® and SAMA® are woven into every aspect of daily life at The Brotherhood Academy — from meals to mentorship to crisis moments."
+        subheading="TBRI® and SAMA® inform daily care at The Brotherhood Academy — from routines and relationships to crisis prevention and response."
         height="lg"
       />
 
@@ -25,7 +25,7 @@ export default function TbriSamaPage() {
           <p className="font-body text-gold text-sm tracking-widest uppercase mb-4">Evidence-Based Care</p>
           <h2 className="font-display text-4xl font-bold text-navy mb-6">Supporting the Whole Child</h2>
           <p className="font-body text-lg text-slate leading-relaxed">
-            Both TBRI® and SAMA® are integrated into our daily routines, therapeutic interventions, and educational programming. Together they form the clinical backbone of our holistic approach to care — addressing the root causes of challenging behavior rather than just its symptoms.
+            Both TBRI® and SAMA® are integrated into our daily routines, therapeutic interventions, and educational programming. Together, they help shape our trauma-informed approach to care, supporting safety, connection, and more effective responses to challenging behavior.
           </p>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function TbriSamaPage() {
             {[
               { area: "Daily Routines", desc: "TBRI® principles guide how we structure meals, chores, transitions, and free time — creating predictability and safety." },
               { area: "Therapeutic Programming", desc: "Our therapeutic interventions draw on TBRI® to address attachment, sensory needs, and behavioral patterns with compassion." },
-              { area: "Educational Settings", desc: "Both TBRI® and SAMA® inform how we support young men in academic environments — responding to stress with empathy, not punishment." },
+              { area: "Educational Settings", desc: "Both TBRI® and SAMA® inform how we support young men in academic environments, helping staff respond to stress with empathy and consistency." },
             ].map(({ area, desc }) => (
               <div key={area} className="bg-navy-light/40 rounded-2xl p-8 border border-gold/20">
                 <h3 className="font-display text-xl font-semibold text-gold mb-3">{area}</h3>
