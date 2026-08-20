@@ -45,12 +45,13 @@ export default function OurMissionPage() {
   return (
     <>
       <PageHero
-        imageSrc="/images/road.png"
+        imageSrc="/images/our-mission-hero.jpg"
+        imageAlt="A young man in a quiet home setting, reflecting"
         eyebrow="Our Mission"
         heading="Nurturing Young Men in Christ"
         subheading="For lives of purpose, accountability, and hope — grounded in faith, structure, and genuine relationship."
         height="lg"
-        objectPosition="center 30%"
+        objectPosition="72% 22%"
       />
 
       {/* Mission Body */}
