@@ -4,9 +4,9 @@ import ProgramCard from "@/components/ProgramCard";
 import CTASection from "@/components/CTASection";
 
 export const metadata = {
-  title: "What We Do",
+  title: "Programs",
   description:
-    "The Brotherhood Academy offers residential living, education, mentorship, and transitional support for young men ages 10–24 in Salado, TX.",
+    "The Brotherhood Academy offers residential living, education, mentorship, and developing transitional support for young men ages 10–24 in Salado, TX.",
 };
 
 const programs = [
@@ -14,31 +14,31 @@ const programs = [
     href: "/residential-living",
     title: "Residential Living",
     description:
-      "A safe, structured home for young men ages 10–17. Trauma-informed care in a cottage-style setting designed to feel like a true home.",
+      "A stable, structured home environment for young men who need consistency, guidance, and support. Grounded in trauma-informed, relationship-based care, the program promotes healing, responsibility, life skills, and a lasting sense of belonging.",
   },
   {
     href: "/tbri-sama",
     title: "TBRI® & SAMA®",
     description:
-      "Trust-Based Relational Intervention and the Satori Alternatives to Managing Aggression — evidence-based frameworks woven into every aspect of daily life.",
+      "Evidence-based approaches that help our team build trust, promote healing, and maintain safety. TBRI® supports connection, empowerment, and healthy relationships, while SAMA® equips staff with proactive strategies for crisis prevention and de-escalation.",
   },
   {
     href: "/thrive-asd",
-    title: "Thrive (ASD Group)",
+    title: "Thrive on the Spectrum",
     description:
-      "Supporting autistic individuals with social skill development, communication confidence, and peer connection in a structured, licensed setting.",
+      "A warm, structured group for individuals on the autism spectrum to strengthen social and communication skills. Through evidence-based activities, role-playing, social stories, and peer interaction, participants practice real-life skills in a safe and encouraging environment.",
   },
   {
     href: "/idd-support",
     title: "IDD Group Therapy",
     description:
-      "Specialized group therapy for individuals with intellectual and developmental disabilities — building adaptive life skills, communication, and emotional regulation.",
+      "A supportive group focused on social, communication, and adaptive life skills for individuals with intellectual and developmental disabilities. Structured routines, visual supports, hands-on activities, and peer modeling help participants build skills at an individualized pace.",
   },
   {
     href: "/emotional-behavioral",
-    title: "Emotional & Behavioral",
+    title: "Emotional & Behavioral Support Group",
     description:
-      "Licensed Social Worker-led group therapy emphasizing coping skills, emotional regulation, communication, and healthy problem-solving.",
+      "A safe, nurturing group for individuals who need additional support managing emotions and behavior. Through guided discussion, role-play, and structured activities, participants develop coping strategies, emotional regulation, communication, and healthy problem-solving skills.",
   },
 ];
 
@@ -47,9 +47,9 @@ export default function WhatWeDoPage() {
     <>
       <PageHero
         imageSrc="/images/what_we_do.png"
-        eyebrow="What We Do"
+        eyebrow="Our Programs"
         heading="Building Futures, Strengthening Faith"
-        subheading="From residential care to specialized therapy, every program we offer is designed to meet young men where they are and guide them toward lasting independence."
+        subheading="From residential care to specialized therapy, every program we offer is designed to meet young men where they are and support them in building greater independence."
         height="lg"
       />
 
@@ -61,7 +61,7 @@ export default function WhatWeDoPage() {
             Whole-Person Care, From Day One
           </h2>
           <p className="font-body text-lg text-slate leading-relaxed">
-            We provide a safe, stable, and Christ-centered home for young men ages 10–17, focusing on healing and character development. Our commitment doesn't end at 18 — we actively expand transitional programs for young men up to age 24, equipping them with life skills and job readiness for lasting independence.
+            We provide a safe, stable, and Christ-centered home for young men ages 10–17, focusing on healing and character development. Our commitment doesn't end at 18 — we are developing transitional support for young men ages 18–24, with a focus on life skills and job readiness.
           </p>
         </div>
       </section>
@@ -69,9 +69,18 @@ export default function WhatWeDoPage() {
       {/* Programs Grid */}
       <section className="pb-20 px-6 bg-offwhite">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {programs.map((p) => (
-              <ProgramCard key={p.href} {...p} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+            {programs.map((p, i) => (
+              <ProgramCard
+                key={p.href}
+                {...p}
+                fillHeight
+                className={
+                  i === 3 ? "lg:col-span-2 lg:col-start-2" :
+                  i === 4 ? "lg:col-span-2 lg:col-start-4" :
+                  "lg:col-span-2"
+                }
+              />
             ))}
           </div>
         </div>
@@ -104,7 +113,7 @@ export default function WhatWeDoPage() {
               },
               {
                 title: "Transitional Support",
-                body: "For ages 18–24, we provide life skills, job readiness, and continued community support — because the transition to independence takes time and relationship.",
+                body: "For ages 18–24, we are developing support focused on life skills, job readiness, and continued community — because the transition to independence takes time and relationship.",
               },
             ].map(({ title, body }) => (
               <div key={title} className="p-8">
