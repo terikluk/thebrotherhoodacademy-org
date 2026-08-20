@@ -32,7 +32,7 @@ const values = [
   {
     value: "Empowerment",
     description:
-      "We equip young men with the practical skills, education, and spiritual tools they need to build lives of purpose and lasting independence.",
+      "We equip young men with the practical skills, education, and spiritual tools they need to build lives of purpose and greater independence.",
   },
   {
     value: "Accountability",
@@ -65,7 +65,7 @@ export default function OurMissionPage() {
               The Brotherhood Academy is a faith-based General Residential Operation (GRO) dedicated to empowering young men ages 10–17 who lack stable homes or parental support. We provide Christ-centered care that addresses the whole person — spiritually, academically, emotionally, and practically.
             </p>
             <p>
-              Our transitional living program extends services to age 24, helping young men develop the independent living skills and vocational foundation they need to pursue education, employment, and meaningful relationships.
+              Brotherhood Academy is developing transitional support for young men ages 18–24, with the goal of helping them build the independent living skills and vocational foundation they need to pursue education, employment, and meaningful relationships.
             </p>
             <p>
               Students at the Academy attend either Salado ISD or enroll in the UT Charter School online program, with individualized academic support provided every step of the way. We believe education is a pathway to empowerment — and every young man deserves access to it.
