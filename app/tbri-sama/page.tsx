@@ -11,7 +11,8 @@ export default function TbriSamaPage() {
   return (
     <>
       <PageHero
-        imageSrc="/images/facility/facility-04.jpg"
+        imageSrc="/images/tbri-hero.jpg"
+        imageAlt="A young man walking down a quiet country road"
         eyebrow="Our Approach"
         heading="Trauma-Informed Care Rooted in Safety and Connection"
         subheading="TBRI® and SAMA® are woven into every aspect of daily life at The Brotherhood Academy — from meals to mentorship to crisis moments."
