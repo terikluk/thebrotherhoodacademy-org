@@ -51,7 +51,7 @@ export default function ResidentialLivingPage() {
               { title: "Enrichment & Activities", desc: "We encourage involvement in extracurricular activities, sports, arts, and community events." },
               { title: "Sunday Church Services", desc: "Faith development is central — residents attend church weekly as part of our structured community life." },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-warm-white rounded-2xl p-8 border border-navy/8">
+              <div key={title} className="bg-warm-white rounded-2xl p-8 border border-navy/8 hover:border-gold/60 hover:shadow-lg transition-all duration-300">
                 <h3 className="font-display text-lg font-semibold text-navy mb-3">{title}</h3>
                 <p className="font-body text-sm text-slate leading-relaxed">{desc}</p>
               </div>
