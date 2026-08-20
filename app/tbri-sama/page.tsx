@@ -84,7 +84,7 @@ export default function TbriSamaPage() {
       </section>
 
       {/* Integration Section */}
-      <section className="py-20 px-6 bg-navy">
+      <section className="py-20 px-6 bg-[linear-gradient(to_bottom,#0F1F3D_0px,#16294C_70px,#0F1F3D_150px,#0F1F3D_100%)]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="font-body text-gold text-sm tracking-widest uppercase mb-3">Daily Integration</p>
