@@ -13,8 +13,8 @@ export default function ResidentialLivingPage() {
       <PageHero
         imageSrc="/images/hero.jpg"
         eyebrow="Residential Living"
-        heading="A Safe, Structured, Supportive Home"
-        subheading="Where young men heal, grow, and thrive — in a Christ-centered environment built on relationship and trust."
+        heading="A Safe, Structured Home for Young Men"
+        subheading="Where young men ages 10–17 experience a stable, Christ-centered home built on structure, relationship, and trust."
         height="lg"
       />
 
